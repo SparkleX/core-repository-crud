@@ -1,6 +1,6 @@
 {
 	"name": "core-repository-crud",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Repository for SQL CRUD",
 	"main": "dist/index.js",
 	"scripts": {
@@ -14,7 +14,7 @@
 	"author": "Sun, Xufei",
 	"license": "MIT",
 	"dependencies": {
-		"core-repository": "0.0.1"
+		"core-repository": "^0.0.2"
 	},
 	"devDependencies": {
 		"typescript": "^3.6.4",
