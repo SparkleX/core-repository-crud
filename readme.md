@@ -1,14 +1,15 @@
-# SQL.JS driver for db-conn
+# Repository support CRUD operations
 
 Example
 
 ```ts
-import {Connection} from "db-conn"
-import {SqlJsConnection, initSqlJs} from "db-conn-sqljs"
+var repoStudent:StudentRepo = new StudentRepo(handler, adapter);
 
-var SQL = await initSqlJs();
-var conn:Connection = new SqlJsConnection();
-await conn.open(SQL);
-conn.execute("create table test (id, name);");
-await conn.close();
+var result = await repoStudent.findAll();
+
+await repoStudent.insert(student);
+
+await repoStudent.updateById(1, student);
+
+await repoStudent.deleteById(1);
 ```

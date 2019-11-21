@@ -1,7 +1,7 @@
 {
 	"name": "core-repository-crud",
 	"version": "0.0.2",
-	"description": "Repository for SQL CRUD",
+	"description": "Repository for CRUD on SQL Database",
 	"main": "dist/index.js",
 	"scripts": {
 		"all": "run-s build cover",
