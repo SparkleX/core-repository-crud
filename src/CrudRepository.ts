@@ -8,7 +8,7 @@ export class CrudRepository<T extends object,ID>{
 	protected q: string;
 	protected TName: string;
 	table: string;
-	public constructor(handler : RepositoryHandler, adapter:CrudRepositoryAdapter, x : new () => T) {
+	public postConstruct(handler : RepositoryHandler, adapter:CrudRepositoryAdapter, x : new () => T) {
 		this.adapter = adapter;
 		this.handler = handler;
 		this.q = this.adapter.getQuote();
