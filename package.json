@@ -1,6 +1,6 @@
 {
 	"name": "core-repository-crud",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Repository for CRUD on SQL Database",
 	"main": "dist/index.js",
 	"scripts": {
@@ -8,8 +8,8 @@
 		"prebuild": "npm run clean",
 		"build": "tsc",
 		"clean": "rimraf dist",
-		"test": "mocha -r ts-node/register test/**/*Test.ts",
-		"cover": "nyc --reporter=lcov --reporter=text-summary mocha -r ts-node/register test/**/*Test.ts"
+		"test": "mocha",
+		"cover": "nyc mocha"
 	},
 	"author": "Sun, Xufei",
 	"license": "MIT",
